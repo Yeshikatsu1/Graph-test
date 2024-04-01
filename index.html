@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Chart</title>
+    <link rel="stylesheet" href="/source/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">Показатель</th>
+                    <th class="td-blue">Текущий день</th>
+                    <th>Вчера</th>
+                    <th>Этот день недели</th>
+                </tr>
+            </thead>
+        </table>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Выручка</td>
+                    <td class="td-blue">500 521</td>
+                    <td class="td-green">480 521</td>
+                    <td class="td-red">4 805 121</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="chart-container"></div>
+        <table id="data-table">
+            <tbody>
+                <tr data-name="Row 1" data-values="[10, 20, 30]">
+                    <td>Наличные</td>
+                    <td class="td-blue">10</td>
+                    <td><span>71</span><span class="additional-value-green"> 0%</span></td>
+                    <td>30</td>
+                </tr>
+                <tr data-name="Row 2" data-values="[25, 33, 41]">
+                    <td>Безналичный расчет</td>
+                    <td class="td-blue">20</td>
+                    <td><span>71</span><span class="additional-value-green"> 0%</span></td>
+                    <td>40</td>
+                </tr>
+                <tr data-name="Row 3" data-values="[54, 44, 11]">
+                    <td>Кредитные карты</td>
+                    <td class="td-blue">30</td>
+                    <td><span>71</span><span class="additional-value-green"> 0%</span></td>
+                    <td>50</td>
+                </tr>
+                <tr data-name="Row 4" data-values="[40, 50, 60]">
+                    <td>Средний чек, руб</td>
+                    <td class="td-blue">30</td>
+                    <td class="td-green"><span class="main-value">77</span><span class="additional-value-green"> 44%</span></td>
+                    <td class="td-green">50</td>
+                </tr>
+                <tr data-name="Row 5" data-values="[14, 22, 79]">
+                    <td>Средний гость, руб</td>
+                    <td class="td-blue">30</td>
+                    <td class="td-green"><span class="main-value">800</span><span class="additional-value-green"> 50%</span></td>
+                    <td class="td-green">800</td>
+                </tr>
+                <tr data-name="Row 6" data-values="[12, 46, 34]">
+                    <td>Удаления из чека до оплаты, руб</td>
+                    <td class="td-blue">70</td>
+                    <td class="td-red"><span class="main-value">90</span><span class="additional-value-red"> -8%</span></td>
+                    <td class="td-green">800</td>
+                </tr>
+                <tr data-name="Row 7" data-values="[45, 63, 71]">
+                    <td>Удаления из чека после оплаты, руб</td>
+                    <td class="td-blue">45</td>
+                    <td><span>45</span><span class="additional-value-green"> 0%</span></td>
+                    <td class="td-green">800</td>
+                </tr>
+                <tr data-name="Row 8" data-values="[12, 14, 45]">
+                    <td>Количество чеков</td>
+                    <td class="td-blue">12</td>
+                    <td class="td-red"><span class="main-value">90</span><span class="additional-value-red"> -8%</span></td>
+                    <td>14</td>
+                </tr>
+                <tr data-name="Row 9" data-values="[34, 65, 77]">
+                    <td>Количество гостей</td>
+                    <td class="td-blue">34</td>
+                    <td class="td-red"><span class="main-value">90</span><span class="additional-value-red"> -8%</span></td>
+                    <td class="td-green">65</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="/source/js/script.js"></script>
+</body>
+
+</html>
